@@ -73,10 +73,10 @@
             </objects>
             <point key="canvasLocation" x="859" y="-378"/>
         </scene>
-        <!--View Controller-->
+        <!--Map View-->
         <scene sceneID="9T1-Pf-6Cu">
             <objects>
-                <viewController id="cUy-BN-eQU" sceneMemberID="viewController">
+                <viewController id="cUy-BN-eQU" customClass="MapViewController" customModule="Assignment1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KTs-Uc-3L0"/>
                         <viewControllerLayoutGuide type="bottom" id="CKP-y8-peO"/>
@@ -84,10 +84,25 @@
                     <view key="view" contentMode="scaleToFill" id="Xap-vd-fnH">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bFT-Mo-U08">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                            </mapView>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="bFT-Mo-U08" secondAttribute="trailing" id="3wt-YH-qTt"/>
+                            <constraint firstAttribute="bottom" secondItem="bFT-Mo-U08" secondAttribute="bottom" id="LXc-NW-Jwn"/>
+                            <constraint firstItem="bFT-Mo-U08" firstAttribute="leading" secondItem="Xap-vd-fnH" secondAttribute="leading" id="SZd-Mk-1sd"/>
+                            <constraint firstItem="bFT-Mo-U08" firstAttribute="top" secondItem="Xap-vd-fnH" secondAttribute="top" id="Zyv-mi-i9l"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="roJ-9C-kcG"/>
+                    <navigationItem key="navigationItem" title="Map View" id="roJ-9C-kcG"/>
+                    <connections>
+                        <outlet property="map" destination="bFT-Mo-U08" id="4Df-EY-jgg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TQh-dv-Dx6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
