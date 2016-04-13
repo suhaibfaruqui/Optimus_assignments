@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E70DDFB1CBD77A300B0816B /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E70DDFA1CBD77A300B0816B /* data.plist */; };
 		0EC2BBDC1CBC32ED0023BB33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC2BBDB1CBC32ED0023BB33 /* AppDelegate.swift */; };
 		0EC2BBDE1CBC32ED0023BB33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC2BBDD1CBC32ED0023BB33 /* ViewController.swift */; };
 		0EC2BBE11CBC32ED0023BB33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EC2BBDF1CBC32ED0023BB33 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E70DDFA1CBD77A300B0816B /* data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data.plist; sourceTree = "<group>"; };
 		0EC2BBD81CBC32ED0023BB33 /* Assignment1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EC2BBDB1CBC32ED0023BB33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EC2BBDD1CBC32ED0023BB33 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				0EC2BBE21CBC32ED0023BB33 /* Assets.xcassets */,
 				0EC2BBE41CBC32ED0023BB33 /* LaunchScreen.storyboard */,
 				0EC2BBE71CBC32ED0023BB33 /* Info.plist */,
+				0E70DDFA1CBD77A300B0816B /* data.plist */,
 			);
 			path = Assignment1;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 			files = (
 				0EC2BBE61CBC32ED0023BB33 /* LaunchScreen.storyboard in Resources */,
 				0EC2BBE31CBC32ED0023BB33 /* Assets.xcassets in Resources */,
+				0E70DDFB1CBD77A300B0816B /* data.plist in Resources */,
 				0EC2BBE11CBC32ED0023BB33 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,6 +392,7 @@
 				0EC2BBF71CBC32ED0023BB33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0EC2BBF81CBC32ED0023BB33 /* Build configuration list for PBXNativeTarget "Assignment1Tests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +401,7 @@
 				0EC2BBFA1CBC32ED0023BB33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
