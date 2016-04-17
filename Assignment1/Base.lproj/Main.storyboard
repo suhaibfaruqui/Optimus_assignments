@@ -3,12 +3,13 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Table-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Assignment1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="tableView" id="BYZ-38-t0r" customClass="ViewController" customModule="Assignment1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -57,7 +58,7 @@
         <scene sceneID="GtS-6n-zL4">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="k4L-tE-ouW" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Table" id="8x0-tf-Mbf"/>
+                    <tabBarItem key="tabBarItem" title="Table" image="list-simple-star-7.png" id="8x0-tf-Mbf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Fn9-gh-SzA">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -76,7 +77,7 @@
         <!--Map View-->
         <scene sceneID="9T1-Pf-6Cu">
             <objects>
-                <viewController id="cUy-BN-eQU" customClass="MapViewController" customModule="Assignment1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mapView" id="cUy-BN-eQU" customClass="MapViewController" customModule="Assignment1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KTs-Uc-3L0"/>
                         <viewControllerLayoutGuide type="bottom" id="CKP-y8-peO"/>
@@ -102,11 +103,52 @@
                     <navigationItem key="navigationItem" title="Map View" id="roJ-9C-kcG"/>
                     <connections>
                         <outlet property="map" destination="bFT-Mo-U08" id="4Df-EY-jgg"/>
+                        <segue destination="PjV-9q-6g2" kind="show" identifier="detailsView" id="0j6-Yg-Biq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TQh-dv-Dx6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1634" y="387"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="fcV-E3-ydl">
+            <objects>
+                <viewController id="PjV-9q-6g2" customClass="DetailViewController" customModule="Assignment1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0Ar-0O-0jo"/>
+                        <viewControllerLayoutGuide type="bottom" id="zZU-t3-83z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uuz-oS-u64">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ME8-ML-1JF">
+                                <rect key="frame" x="103" y="215" width="394" height="170"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="KlQ-qM-AH2"/>
+                                    <constraint firstAttribute="width" secondItem="ME8-ML-1JF" secondAttribute="height" multiplier="197:85" id="XpP-o7-Ma9"/>
+                                    <constraint firstAttribute="width" constant="394" id="Y8p-zM-0q7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ME8-ML-1JF" firstAttribute="centerY" secondItem="uuz-oS-u64" secondAttribute="centerY" id="hPe-fm-dcA"/>
+                            <constraint firstItem="ME8-ML-1JF" firstAttribute="centerX" secondItem="uuz-oS-u64" secondAttribute="centerX" id="vVO-oa-t86"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addressLabel" destination="ME8-ML-1JF" id="g2M-Ti-2SW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s6H-iE-yT2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2337" y="387"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Zwq-Tu-yoY">
@@ -131,7 +173,7 @@
         <scene sceneID="1Ej-uU-EXv">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mM2-ga-pvr" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Map" id="mWe-mk-quK"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="compass-point-7.png" id="mWe-mk-quK"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5jD-2Q-VDI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -148,4 +190,8 @@
             <point key="canvasLocation" x="859" y="387"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="compass-point-7.png" width="30" height="30"/>
+        <image name="list-simple-star-7.png" width="30" height="30"/>
+    </resources>
 </document>

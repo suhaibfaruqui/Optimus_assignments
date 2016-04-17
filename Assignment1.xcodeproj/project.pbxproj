@@ -7,7 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E234A551CC29E2F0015AFB7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E234A541CC29E2F0015AFB7 /* DetailViewController.swift */; };
 		0E70DDFB1CBD77A300B0816B /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E70DDFA1CBD77A300B0816B /* data.plist */; };
+		0EA8BADD1CC01974003F3889 /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA8BADC1CC01974003F3889 /* CustomAnnotation.swift */; };
+		0EABE26C1CC3F22F00E53DD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC2BBDD1CBC32ED0023BB33 /* ViewController.swift */; };
+		0EABE26D1CC3FB6D00E53DD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EC2BBDF1CBC32ED0023BB33 /* Main.storyboard */; };
+		0EABE26E1CC410B200E53DD8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAEB49A1CBEBFD8004FDB1D /* MapViewController.swift */; };
+		0EABE26F1CC4110600E53DD8 /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA8BADC1CC01974003F3889 /* CustomAnnotation.swift */; };
+		0EABE2701CC4110800E53DD8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E234A541CC29E2F0015AFB7 /* DetailViewController.swift */; };
+		0EABE2711CC4113100E53DD8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EAEB49F1CBEC11E004FDB1D /* CoreLocation.framework */; };
+		0EABE2721CC4113300E53DD8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EAEB49D1CBEC110004FDB1D /* MapKit.framework */; };
+		0EABE2741CC4119800E53DD8 /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E70DDFA1CBD77A300B0816B /* data.plist */; };
+		0EABE2751CC4119B00E53DD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC2BBDB1CBC32ED0023BB33 /* AppDelegate.swift */; };
+		0EABE2761CC411A200E53DD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EC2BBE21CBC32ED0023BB33 /* Assets.xcassets */; };
+		0EABE2771CC411A600E53DD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EC2BBE41CBC32ED0023BB33 /* LaunchScreen.storyboard */; };
+		0EABE2791CC41E5E00E53DD8 /* list-simple-star-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EABE2781CC41E5E00E53DD8 /* list-simple-star-7.png */; };
+		0EABE27B1CC41F4D00E53DD8 /* compass-point-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EABE27A1CC41F4D00E53DD8 /* compass-point-7.png */; };
+		0EABE27D1CC41F7100E53DD8 /* map_pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EABE27C1CC41F7100E53DD8 /* map_pin.png */; };
 		0EAEB49B1CBEBFD8004FDB1D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAEB49A1CBEBFD8004FDB1D /* MapViewController.swift */; };
 		0EAEB49E1CBEC110004FDB1D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EAEB49D1CBEC110004FDB1D /* MapKit.framework */; };
 		0EAEB4A01CBEC11E004FDB1D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EAEB49F1CBEC11E004FDB1D /* CoreLocation.framework */; };
@@ -30,7 +46,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E234A541CC29E2F0015AFB7 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		0E70DDFA1CBD77A300B0816B /* data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data.plist; sourceTree = "<group>"; };
+		0EA8BADC1CC01974003F3889 /* CustomAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
+		0EABE2781CC41E5E00E53DD8 /* list-simple-star-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "list-simple-star-7.png"; sourceTree = "<group>"; };
+		0EABE27A1CC41F4D00E53DD8 /* compass-point-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "compass-point-7.png"; sourceTree = "<group>"; };
+		0EABE27C1CC41F7100E53DD8 /* map_pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_pin.png; sourceTree = "<group>"; };
 		0EAEB49A1CBEBFD8004FDB1D /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		0EAEB49D1CBEC110004FDB1D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		0EAEB49F1CBEC11E004FDB1D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -60,6 +81,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EABE2721CC4113300E53DD8 /* MapKit.framework in Frameworks */,
+				0EABE2711CC4113100E53DD8 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +92,7 @@
 		0EAEB4991CBEBF8C004FDB1D /* Table View */ = {
 			isa = PBXGroup;
 			children = (
+				0EABE2781CC41E5E00E53DD8 /* list-simple-star-7.png */,
 				0EC2BBDD1CBC32ED0023BB33 /* ViewController.swift */,
 				0E70DDFA1CBD77A300B0816B /* data.plist */,
 			);
@@ -78,9 +102,13 @@
 		0EAEB49C1CBEBFE3004FDB1D /* Map View */ = {
 			isa = PBXGroup;
 			children = (
+				0EABE27C1CC41F7100E53DD8 /* map_pin.png */,
+				0EABE27A1CC41F4D00E53DD8 /* compass-point-7.png */,
 				0EAEB49F1CBEC11E004FDB1D /* CoreLocation.framework */,
 				0EAEB49D1CBEC110004FDB1D /* MapKit.framework */,
 				0EAEB49A1CBEBFD8004FDB1D /* MapViewController.swift */,
+				0EA8BADC1CC01974003F3889 /* CustomAnnotation.swift */,
+				0E234A541CC29E2F0015AFB7 /* DetailViewController.swift */,
 			);
 			name = "Map View";
 			sourceTree = "<group>";
@@ -210,8 +238,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EC2BBE61CBC32ED0023BB33 /* LaunchScreen.storyboard in Resources */,
+				0EABE27D1CC41F7100E53DD8 /* map_pin.png in Resources */,
 				0EC2BBE31CBC32ED0023BB33 /* Assets.xcassets in Resources */,
+				0EABE2791CC41E5E00E53DD8 /* list-simple-star-7.png in Resources */,
 				0E70DDFB1CBD77A300B0816B /* data.plist in Resources */,
+				0EABE27B1CC41F4D00E53DD8 /* compass-point-7.png in Resources */,
 				0EC2BBE11CBC32ED0023BB33 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,6 +251,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EABE2741CC4119800E53DD8 /* data.plist in Resources */,
+				0EABE2761CC411A200E53DD8 /* Assets.xcassets in Resources */,
+				0EABE2771CC411A600E53DD8 /* LaunchScreen.storyboard in Resources */,
+				0EABE26D1CC3FB6D00E53DD8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,7 +267,9 @@
 			files = (
 				0EC2BBDE1CBC32ED0023BB33 /* ViewController.swift in Sources */,
 				0EAEB49B1CBEBFD8004FDB1D /* MapViewController.swift in Sources */,
+				0E234A551CC29E2F0015AFB7 /* DetailViewController.swift in Sources */,
 				0EC2BBDC1CBC32ED0023BB33 /* AppDelegate.swift in Sources */,
+				0EA8BADD1CC01974003F3889 /* CustomAnnotation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,7 +277,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EABE2751CC4119B00E53DD8 /* AppDelegate.swift in Sources */,
+				0EABE26C1CC3F22F00E53DD8 /* ViewController.swift in Sources */,
+				0EABE26E1CC410B200E53DD8 /* MapViewController.swift in Sources */,
+				0EABE2701CC4110800E53DD8 /* DetailViewController.swift in Sources */,
 				0EC2BBF11CBC32ED0023BB33 /* Assignment1Tests.swift in Sources */,
+				0EABE26F1CC4110600E53DD8 /* CustomAnnotation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
