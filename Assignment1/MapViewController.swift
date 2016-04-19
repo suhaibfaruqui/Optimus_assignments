@@ -24,8 +24,15 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         map.delegate = self //assign map delegate to self
         locationManager.requestWhenInUseAuthorization() //request authorization for mapview
         
+        self.map.scrollEnabled = false //disable scrolling
+
+        //set region on map
+        let region = MKCoordinateRegionMakeWithDistance(coordinates, 600, 600);
+        map.setRegion(region, animated: true) //set region to show around coordinates
+        self.getPlacemarkFromLocation(CLLocation(latitude: coordinates.latitude, longitude: coordinates.longitude))
+        
     }
-    
+ /*
     func mapView(mapView: MKMapView, didUpdateUserLocation userLocation: MKUserLocation) {
         
         let region = MKCoordinateRegionMakeWithDistance(coordinates, 600, 600);
@@ -33,7 +40,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         self.getPlacemarkFromLocation(CLLocation(latitude: coordinates.latitude, longitude: coordinates.longitude)) //get placemarks to show on annotation view callout
         
     }
-
+*/
     override func didReceiveMemoryWarning() {
         
         super.didReceiveMemoryWarning()
